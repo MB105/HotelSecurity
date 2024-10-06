@@ -1,0 +1,67 @@
+# Get all hotels
+GET http://localhost:7777/hotels
+Accept: application/json
+
+###
+
+GET http://localhost:7007/api/hotels
+Accept: application/json
+
+###
+
+# Get hotel by ID
+GET http://localhost:7777/hotel/100
+Accept: application/json
+
+###
+
+
+# Create a new hotel
+POST http://localhost:7777/hotel
+Content-Type: application/json
+
+{
+  "name": "Hotel 7",
+  "address": "Address 7"
+}
+
+
+###
+
+
+#Get all rooms
+GET http://localhost:7777/rooms
+Accept: application/json
+
+
+###
+
+# Get a room by ID
+GET http://localhost:7777/room/1
+Accept: application/json
+
+###
+
+# Create a new room
+POST http://localhost:7777/hotel/1/room
+Content-Type: application/json
+
+{
+  "hotelId": 1,
+  "number": 101,
+  "price": 150.00
+}
+
+###
+
+# Get all rooms for hotel
+
+GET http://localhost:7777/hotel/1/rooms
+Content-Type: application/json
+
+###
+
+
+
+
+
